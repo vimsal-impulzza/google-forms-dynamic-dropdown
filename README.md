@@ -82,7 +82,17 @@ Dentro del Google Sheet creado:
 
 > **Tip:** Escribe `1` en A1, `2` en A2, selecciona ambas y arrastra el cuadrito azul hacia abajo para llenar rápido.
 
+> **Opcional — números aleatorios:** Si en lugar de una secuencia ordenada quieres un listado aleatorio de números, pega la siguiente fórmula en la celda A1 de la hoja `Configuracion`:
+>
+> ```
+> =ARRAY_CONSTRAIN(SORT(SEQUENCE(901;1;100);RANDARRAY(901);TRUE);300;1)
+> ```
+>
+> Esto genera 300 números únicos tomados al azar del rango 100–1000, sin repetición.
+
 ![Hoja Configuracion con los números disponibles](Img/SheetsOptions.png)
+
+![Fórmula de números aleatorios en la hoja Configuracion](Img/SheetsRandom.png)
 
 ### 4. Agregar el script
 
